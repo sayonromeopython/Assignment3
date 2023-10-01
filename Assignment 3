@@ -15,3 +15,18 @@ print('The tip is:', tip)
 print('The food tax is:', food_tax)
 print('The total price is:', total_charge)
 
+
+
+Charge_for_food =float(input( ' Please enter charges for the food:'))
+percentage_of_tip = 18
+percentage_of_tax = 7
+tip = (percentage_of_tip / 100)* Charge_for_food
+food_tax = (percentage_of_tax /100)*Charge_for_food
+total_charge = Charge_for_food + tip + food_tax
+
+print('The cost for the food is:', Charge_for_food)
+print('The tip percentage is:', percentage_of_tip)
+print('The tax percentage is:', percentage_of_tax)
+print('The tip is:', tip)
+print('The food tax is:', format(food_tax, '.2f'))  # Format the food tax with two decimal places
+print('The total price is:', total_charge)

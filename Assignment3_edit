@@ -4,3 +4,26 @@ print('The tax percentage is: ${:.2f}'.format(percentage_of_tax))
 print('The tip is: ${:.2f}'.format(tip))
 print('The food tax is: ${:.2f}'.format(food_tax))  # Format the food tax with two decimal places
 print('The total price is: ${:.2f}'.format(total_charge))
+
+
+
+#Part 2
+#A python program to calculate the 24 hour clock
+
+current_time = int(input('Please enter the time in hours, should be between 0-23): '))
+alarm_wait_time = int(input(" Please enter the alarm wait time: '))
+time_for_alarm = (current + alarm_wait_time )%24
+
+print('The alarm time is{ time_for_alarm} : 00 .')
+
+
+edit
+
+current_time = int(input('Please enter the time in hours, should be between 0-23): '))
+alarm_wait_time = int(input( 'Please enter the alarm wait time: '))
+time_for_alarm = (current_time + alarm_wait_time )%24
+am_pm = 'Am' if time_for_alarm < 12 else 'PM'
+
+if time_for_alarm >12:
+  time_for_alarm -= 12
+print(f'The alarm time is { time_for_alarm} : 00  {am_pm}.')
